@@ -1,5 +1,9 @@
 public class Context {
+    private IStrategy strategy;
     public void appliquerStrategy(){
-        System.out.println("J'applique la stratégie");
+        strategy.appliquer();
+    }
+    public void setStrategy(IStrategy strategy){
+        this.strategy=strategy;
     }
 }
